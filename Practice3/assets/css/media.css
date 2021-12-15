@@ -1,0 +1,12 @@
+@media screen and (max-width:480px){
+    main{
+        flex-direction: column;
+    }
+    .left{
+        width: 90%;
+        height: 1000px;
+    }
+    .right{
+        width: 90%;
+    }
+}
