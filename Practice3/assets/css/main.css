@@ -12,6 +12,18 @@ main {
   align-content: space-around;
 }
 
+.right {
+  flex-direction: column;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.left {
+  flex-direction: column;
+  flex-grow: 3;
+  width: 60%;
+}
+
 .item1,
 .item2,
 .item3,
@@ -19,38 +31,13 @@ main {
 .item5 {
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   margin: 1%;
-  align-self:center;
-}
-.item1,
-.item3 {
-  flex-basis: 25rem;
-  flex-grow: 3;
-}
-.item1 img,
-.item3 img{
-  width: 100%;
-}
-.item2,
-.item4,
-.item5 {
-  flex-basis: 10%;
-  flex-grow: 1;
-  align-self:flex-start;
-}
-.item1 div,
-.item3 div {
-  display: inline;
+  align-self: center;
 }
 
 span {
   background-color: black;
   color: white;
   padding: 2px 4px;
-}
-
-main p,
-h2 {
-  padding: 0 2%;
 }
 
 .item4 img {
@@ -65,6 +52,11 @@ h2 {
 .ps {
   display: flex;
   flex-direction: column;
+  padding: 0 10%;
+}
+
+.big {
+  padding: 0 10%;
 }
 
 footer a {
@@ -89,16 +81,20 @@ footer {
   padding: 10% 5%;
 }
 
-.tag span{
+.tag span {
   background-color: rgb(204, 201, 201);
-  padding: 2%;
-  margin-top: 20px;
+  padding: 1%;
+  margin: 3%;
 }
 
-.btn{
+.btn {
   border: 1px solid black;
   display: inline;
   padding: 2%;
-  margin:2%;
+  margin: 2%;
 }
 
+.item5 {
+  height: max-content;
+  width: max-content;
+}
